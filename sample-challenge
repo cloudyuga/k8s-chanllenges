@@ -1,0 +1,26 @@
+# Challenge #1
+
+## Desciption 
+Create a namespace called `dev` and create a `pod` with name  `nginx`
+
+## Time
+15 Minutes
+
+## Setup Requirement 
+K8s Cluster of anytime
+
+## Any prerequisite
+N/A
+
+But may you can add apply a given `YAML` to make updates on the base cluster 
+
+## Verification 
+
+For now we can put command like following to check 
+
+```
+kubectl get ns  dev  -o=jsonpath='{.metadata.name}'
+
+kubectl get pod nginx -n  dev  -o=jsonpath='{.metadata.name}'
+```
+
